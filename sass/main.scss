@@ -1,0 +1,314 @@
+
+* { box-sizing: border-box;}
+h2 {margin: 0}
+
+@font-face {
+  font-family: 'Consolas';
+    src: url('../fonts/consolas.eot');
+    src: url('../fonts/consolas.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/consolas.woff') format('woff'),
+         url('../fonts/consolas.ttf') format('truetype'),
+         url('../fonts/consolas.svg#consolas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #272822;
+}
+.wrapper {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto; 
+}
+
+.header {
+	display: block;
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #0b0b0a;
+	background-color: #171814;
+}
+
+.logo {
+	display: inline-block;
+	height: 80px;
+}
+
+.logo h1 {
+	margin: 15px 0 0 0;
+	padding: 0;
+	font:  50px/50px 'Consolas', sans-serif;
+	color: #d92731;
+}
+
+  .tagstyle::before {
+  	content: '<';
+  	color: #fff;
+  }
+
+  .tagstyle::after {
+  	content: '/>' ;
+  	color: #fff;
+  }
+
+.navigation {
+	height: 80px;
+ 	float: right;
+ 	margin: 0;}
+
+.navigation li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	margin: 29px 0 0 30px;
+}
+
+.navigation li:first-child {margin-left: 0;}
+
+.navigation a {
+	display: inline-block;
+	font: 20px 'Consolas', sans-serif;
+	color: #d92731;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #fff;
+	transition: all 200ms linear;
+}
+
+.navigation a:hover::before, 
+.navigation a:hover::after {
+	transition: all 200ms linear;
+	color: #d92731;
+}
+
+.navigation a:hover::before {padding-right: 10px;}
+.navigation a:hover::after {padding-left: 10px;}
+
+
+.home {
+	display: block;
+	width: 100%;
+	height: 800px;
+	border-top: 1px solid #3c3d38;
+	background: url(../img/home-bg.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.home-title {
+	text-align: right;
+	margin-top: 200px;
+}
+
+.home-title p{
+	margin-bottom: 0;
+	font: normal 30px/30px 'Consolas', sans-serif;
+	color:  #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.home-title span {
+	font-weight: bold;
+	color: #48beef;
+}
+
+.home-title h3 {
+	font: bold 40px 'Consolas', sans-serif;
+	text-align: right;
+	color: #d92731;	
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+	display: block;
+	width: 100%;
+	height: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #d92731;
+	background-color: #171814;
+	box-shadow: 0 1px 0 0 #0b0b0a, 0 2px 0 0 #3c3d38;
+}
+
+.section-title h2 {
+	padding-top: 16px;
+}
+
+.about {
+	display: block;
+	width: 100%;
+	height: 700px;
+}
+
+.myphoto {
+	display: block;
+	width: 235px;
+	height: 235px;
+	margin: 20px auto;
+}
+.myphoto img {
+	width: 235px;
+	height: 235px;
+}
+
+.about-me {
+	padding: 20px;
+	font: 16px 'Consolas', sans-serif;
+	color: #fff;
+}
+
+.about .row {
+	margin-top: 50px;
+}
+
+.select-style {
+	font: normal 20px/20px 'Consolas';
+	color: #6ac62e;
+}
+
+h2.tagstyle {
+	font: normal 35px 'Consolas', sans-serif;
+	color: #d92731;
+	text-align: center;
+}
+
+.select-style::after {
+	display: inline-block;
+	content: '{';
+	color: #fff;
+	padding-left: 5px;
+}
+
+.items {border-left: 1px dotted #464741;}
+.item-name {
+	font: italic 18px 'Consolas';
+	color: #48beef;
+}
+
+.item-name::before {
+	display: inline-block;
+	content:'';
+	vertical-align: middle;
+	height: 1px;
+	width: 40px;
+	background: #70706b;
+}
+
+.item-name:last-child::after {
+	display: inline-block;
+	content: '}';
+	color: #fff;
+	font-style: normal;
+	padding-left: 5px;
+}
+
+.item-value{font-style: normal;}
+.item-value::before {
+	display: inline-block;
+	content:':';
+	padding-right: 5px;
+	font-style: normal;
+	color: #fff;
+}
+
+.item-value::after { 
+	display: inline-block;
+	content: ';';
+	padding-left: 5px;
+	font-style: normal;
+	color: #fff;
+}
+
+.mat {
+	color: #9981ff;
+}
+
+.portfolio {
+	width: 100%;
+	height: 550px;
+}
+
+.sites {margin-top: 30px;}
+.site {
+	display: block;
+	width: 100%;
+	height: 200px;
+	border: 1px solid #0b0b0a;
+	outline: 1px solid #3c3d38;	
+}
+
+.site img {
+	display: block;
+	margin: 0 auto;
+}
+
+.site a {
+	display: block;
+	margin-top: 80px;
+	text-align: center;
+	vertical-align: middle;
+	font: bold 25px 'Consolas';
+	color: #d92731;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.contacts {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+.contacts .col-4 {margin-left: 33%;}
+.contacts-title {
+	margin-top: 30px;
+}
+.contacts-title h2 {
+	text-align: center;
+	font: bold 30px  'Consolas', sans-serif;
+	color: #9981ff;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.contacts-section {
+	display: block;	
+	padding-left: 50px;
+	height: 200px;	
+	font: 20px 'Consolas' ;
+	color: #48beef;
+	border: 1px solid #0b0b0a;
+	outline: 1px solid #3c3d38;
+}
+
+.contacts-section p {
+	margin: 10px auto;
+}
+.email, .phone, .skype{
+	margin: 0;
+	padding-left: 30px;
+	
+}
+.skype {
+	background: url(../img/skype12.png) no-repeat;
+}
+
+.social {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.social-email {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.social-phone {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -39px;
+}
