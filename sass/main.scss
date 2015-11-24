@@ -22,7 +22,6 @@ body {
 	width: 100%;
 }
 .container {
-  // width: 1200px;
   padding: 0 15px;
   margin: 0 auto; 
 }
@@ -122,7 +121,7 @@ body {
 .home-title h3 {
 	font: bold 40px 'Consolas', sans-serif;
 	text-align: right;
-	color: #d92731;	
+	color: #d92731;
 	text-transform: uppercase;
 	margin-top: 10px;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -159,7 +158,11 @@ body {
 	width: 235px;
 	height: 235px;
 }
-
+.about-me h3 {
+	font: bold 20px 'Consolas';
+	color: #d92731;
+	margin-top: 0;
+}
 .about-me {
 	padding: 20px;
 	font: 16px 'Consolas', sans-serif;
@@ -223,7 +226,7 @@ h2.tagstyle {
 .item-value::after { 
 	display: inline-block;
 	content: ';';
-	padding-left: 5px;
+	padding-left: 0;
 	font-style: normal;
 	color: #fff;
 }
@@ -248,10 +251,7 @@ h2.tagstyle {
 }
 
 .site img {
-	display: block;
-	width: 370px;
-	height: 200px;
-	margin: 0 auto;
+max-width: 100%;
 }
 
 .site a {
@@ -286,7 +286,7 @@ h2.tagstyle {
 
 .contacts-section {
 	display: block;	
-	padding-left: 50px;
+	padding-left: 10px;
 	height: 200px;	
 	font: 20px 'Consolas' ;
 	color: #48beef;
@@ -343,8 +343,15 @@ h2.tagstyle {
 	}
 }
 //for smartfones
-@media only screen and (min-width: 320px) and (max-width: 782px) {
+@media only screen and (max-width: 782px) {
 	.container {
-		width: 500px;
+		width: 100%;
+		padding: 0;
 	}
+	.navigation {display: none;}
+	.row {margin: 0;}
+	.col-4, .col-3, .col-6 {width: 100%;}
+	.about {height: 1000px;}
+	.portfolio {height: 700px;}
+	.second-row {display: none;}
 }
