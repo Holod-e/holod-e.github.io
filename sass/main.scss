@@ -22,7 +22,7 @@ body {
 	width: 100%;
 }
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding: 0 15px;
   margin: 0 auto; 
 }
@@ -98,7 +98,7 @@ body {
 	width: 100%;
 	height: 800px;
 	border-top: 1px solid #3c3d38;
-	background: url(../img/home-bg.jpg) no-repeat;
+	background: url(../img/home-bg.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -325,20 +325,26 @@ h2.tagstyle {
 }
 
 // for dekstops
-@media only screen and (min-width: 901px) and (max-width: 1199px) {
+@media only screen and (min-width: 1101px)  {
 	.container {
 		width: 1200px;
+	}
+}
+//for nontebooks
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+	.container {
+		width:1070px;
 	}
 }
 // for tablets
 @media only screen and (min-width: 783px) and (max-width: 900px) {
 	.container {
-		width: 1000px;
+		width:800px;
 	}
 }
 //for smartfones
-@media only screen and (max-width: 782px) {
+@media only screen and (min-width: 320px) and (max-width: 782px) {
 	.container {
-		width: 750px;
+		width: 500px;
 	}
 }
