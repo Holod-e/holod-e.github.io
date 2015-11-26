@@ -21,9 +21,11 @@ body {
 	display: block;
 	width: 100%;
 }
+
 .container {
   padding: 0 15px;
   margin: 0 auto; 
+  margin-bottom: 50px;
 }
 
 .header {
@@ -138,21 +140,17 @@ body {
 	box-shadow: 0 1px 0 0 #0b0b0a, 0 2px 0 0 #3c3d38;
 }
 
-.section-title h2 {
-	padding-top: 16px;
-}
+.section-title h2 {padding-top: 16px;}
+
+///////////////ABOUT///////////////////////////
 
 .about {
 	display: block;
 	width: 100%;
-	height: 700px;
 }
 
-.myphoto {
-	display: block;
-	width: 235px;
-	height: 235px;
-	margin: 20px auto;
+.section-title {
+	margin-bottom: 50px;
 }
 .myphoto img {
 	width: 235px;
@@ -167,10 +165,6 @@ body {
 	padding: 20px;
 	font: 16px 'Consolas', sans-serif;
 	color: #fff;
-}
-
-.about .row {
-	margin-top: 50px;
 }
 
 .select-style {
@@ -192,6 +186,7 @@ h2.tagstyle {
 }
 
 .items {border-left: 1px dotted #464741;}
+
 .item-name {
 	font: italic 18px 'Consolas';
 	color: #48beef;
@@ -231,27 +226,23 @@ h2.tagstyle {
 	color: #fff;
 }
 
-.mat {
-	color: #9981ff;
-}
+.mat {color: #9981ff;}
 
-.portfolio {
-	width: 100%;
-	height: 550px;
-}
+/////////////////PORTFOLIO/////////////////////////
 
-.sites {margin-top: 30px;}
+.portfolio {width: 100%;}
+
 .site {
+	position: relative;
 	display: block;
-	width: 100%;
-	height: 200px;
-	border: 1px solid #0b0b0a;
-	outline: 1px solid #3c3d38;	
+	max-width: 100%;
+	margin: 15px 0 ;
 	overflow: hidden;
 }
 
 .site img {
 max-width: 100%;
+vertical-align: bottom;
 }
 
 .site a {
@@ -264,19 +255,38 @@ max-width: 100%;
 	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.site a.empty {
-	margin-top: 80px;
+.image-hover {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
 }
 
+.image-hover h3 {
+	padding-top: 50px;
+}
+.site a:hover .image-hover {display: block;}
+
+//////////////CONTACTS///////////////////////////
 .contacts {
 	display: block;
 	width: 100%;
-	height: 400px;
 }
+
+.myphoto {
+	display: block;
+	width: 235px;
+	height: 235px;
+	margin: 20px auto;
+}
+
 .contacts .col-4 {margin-left: 33%;}
-.contacts-title {
-	margin-top: 30px;
-}
+
+.contacts-title {margin-top: 30px;}
+
 .contacts-title h2 {
 	text-align: center;
 	font: bold 30px  'Consolas', sans-serif;
@@ -294,17 +304,13 @@ max-width: 100%;
 	outline: 1px solid #3c3d38;
 }
 
-.contacts-section p {
-	margin: 10px auto;
-}
+.contacts-section p {margin: 10px auto;}
+
 .email, .phone, .skype{
 	margin: 0;
 	padding-left: 30px;
-	
 }
-.skype {
-	background: url(../img/skype12.png) no-repeat;
-}
+.skype {background: url(../img/skype12.png) no-repeat;}
 
 .social {
     background-image: url(../img/spritesheet.png);
@@ -327,19 +333,19 @@ max-width: 100%;
 // for dekstops
 @media only screen and (min-width: 1101px)  {
 	.container {
-		width: 1200px;
+		max-width: 1200px;
 	}
 }
 //for nontebooks
 @media only screen and (min-width: 901px) and (max-width: 1100px) {
 	.container {
-		width:1070px;
+		max-width: 1070px;
 	}
 }
 // for tablets
 @media only screen and (min-width: 783px) and (max-width: 900px) {
 	.container {
-		width:800px;
+		max-width: 800px;
 	}
 }
 //for smartfones
@@ -348,10 +354,13 @@ max-width: 100%;
 		width: 100%;
 		padding: 0;
 	}
+
 	.navigation {display: none;}
 	.row {margin: 0;}
-	.col-4, .col-3, .col-6 {width: 100%;}
-	.about {height: 1000px;}
-	.portfolio {height: 700px;}
-	.second-row {display: none;}
+	.col-4, .col-3, .col-6 {
+		width: 100%;
+	}
+	//.about {height: 1000px;}
+	//.portfolio {height: 700px;}
+	//.second-row {display: none;}
 }
