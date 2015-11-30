@@ -135,26 +135,12 @@ body {
 .section-title h2 {
   padding-top: 16px; }
 
-.about {
+.info {
   display: block;
   width: 100%; }
 
 .section-title {
   margin-bottom: 50px; }
-
-.myphoto img {
-  width: 235px;
-  height: 235px; }
-
-.about-me h3 {
-  font: bold 20px 'Consolas';
-  color: #d92731;
-  margin-top: 0; }
-
-.about-me {
-  padding: 20px;
-  font: 16px 'Consolas', sans-serif;
-  color: #fff; }
 
 .select-style {
   font: normal 20px/20px 'Consolas';
@@ -251,7 +237,7 @@ h2.tagstyle {
 .site a:hover .image-hover {
   display: block; }
 
-.contacts {
+.about {
   display: block;
   width: 100%; }
 
@@ -261,51 +247,19 @@ h2.tagstyle {
   height: 235px;
   margin: 20px auto; }
 
-.contacts .col-4 {
-  margin-left: 33%; }
+.myphoto img {
+  width: 235px;
+  height: 235px; }
 
-.contacts-title {
-  margin-top: 30px; }
+.about-me h3 {
+  font: bold 20px 'Consolas';
+  color: #d92731;
+  margin-top: 0; }
 
-.contacts-title h2 {
-  text-align: center;
-  font: bold 30px  'Consolas', sans-serif;
-  color: #9981ff;
-  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5); }
-
-.contacts-section {
-  display: block;
-  padding-left: 10px;
-  height: 200px;
-  font: 20px 'Consolas';
-  color: #48beef;
-  border: 1px solid #0b0b0a;
-  outline: 1px solid #3c3d38; }
-
-.contacts-section p {
-  margin: 10px auto; }
-
-.email, .phone, .skype {
-  margin: 0;
-  padding-left: 30px; }
-
-.skype {
-  background: url(../img/skype12.png) no-repeat; }
-
-.social {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block; }
-
-.social-email {
-  width: 24px;
-  height: 24px;
-  background-position: -5px -5px; }
-
-.social-phone {
-  width: 24px;
-  height: 24px;
-  background-position: -39px -39px; }
+.about-me {
+  padding: 20px;
+  font: 16px 'Consolas', sans-serif;
+  color: #fff; }
 
 footer {
   display: block;
