@@ -28,6 +28,7 @@ body {
   margin-bottom: 50px;
 }
 
+/////////////////HEADER////////////////
 .header {
 	display: block;
 	width: 100%;
@@ -65,12 +66,15 @@ body {
 
 .navigation li {
 	display: block;
+	width: 155px; 
+	text-align: center;
 	list-style-type: none;
 	float: left;
-	margin: 29px 0 0 30px;
+	margin: 30px 0 0 0;
+
 }
 
-.navigation li:first-child {margin-left: 0;}
+.navigation li:first-child {width: 100px;}
 
 .navigation a {
 	display: inline-block;
@@ -93,7 +97,7 @@ body {
 .navigation a:hover::before {padding-right: 10px;}
 .navigation a:hover::after {padding-left: 10px;}
 
-
+/////////////HOME////////////////
 .home {
 	display: block;
 	width: 100%;
