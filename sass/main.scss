@@ -49,8 +49,6 @@ body {
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto; 
   margin-bottom: 50px;
 }
 
@@ -246,8 +244,6 @@ h2.tagstyle {
 
 /////////////////PORTFOLIO/////////////////////////
 
-.portfolio {width: 100%;}
-
 .site {
 	position: relative;
 	display: block;
@@ -364,34 +360,10 @@ footer {
 
 
 
-// for dekstops
-@media only screen and (min-width: 1101px)  {
-	.container {
-		max-width: 1200px;
-	}
-}
-//for nontebooks
-@media only screen and (min-width: 901px) and (max-width: 1100px) {
-	.container {
-		max-width: 1070px;
-	}
-}
-// for tablets
-@media only screen and (min-width: 783px) and (max-width: 900px) {
-	.container {
-		max-width: 800px;
-	}
-}
-//for smartfones
-@media only screen and (max-width: 782px) {
-	.container {
-		width: 100%;
-		padding: 0;
-	}
+
+// //for smartfones
+@media only screen and (max-width: 768px) {
+	
 
 	.navigation {display: none;}
-	.row {margin: 0;}
-	.col-4, .col-3, .col-6 {
-		width: 100%;
-	}
 }

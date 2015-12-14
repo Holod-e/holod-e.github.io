@@ -46,8 +46,6 @@ body {
   width: 100%; }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
   margin-bottom: 50px; }
 
 .header {
@@ -224,9 +222,6 @@ h2.tagstyle {
 .mat {
   color: #9981ff; }
 
-.portfolio {
-  width: 100%; }
-
 .site {
   position: relative;
   display: block;
@@ -339,25 +334,6 @@ footer {
 .gh:hover {
   background-position: 0px -76px; }
 
-@media only screen and (min-width: 1101px) {
-  .container {
-    max-width: 1200px; } }
-
-@media only screen and (min-width: 901px) and (max-width: 1100px) {
-  .container {
-    max-width: 1070px; } }
-
-@media only screen and (min-width: 783px) and (max-width: 900px) {
-  .container {
-    max-width: 800px; } }
-
-@media only screen and (max-width: 782px) {
-  .container {
-    width: 100%;
-    padding: 0; }
+@media only screen and (max-width: 768px) {
   .navigation {
-    display: none; }
-  .row {
-    margin: 0; }
-  .col-4, .col-3, .col-6 {
-    width: 100%; } }
+    display: none; } }
