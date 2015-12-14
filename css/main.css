@@ -288,7 +288,6 @@ h2.tagstyle {
 
 footer {
   display: block;
-  height: 50px;
   text-align: center;
   padding-top: 1px;
   background-color: #171814;
@@ -297,10 +296,48 @@ footer {
 
 .author-info {
   font: 15px 'Consolas';
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 20px; }
 
 .athor-info span {
   font-size: 20px; }
+
+.social-icons {
+  display: block;
+  margin: 0 auto; }
+
+.social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/social.png); }
+
+.vk {
+  background-position: 0px -102px; }
+
+.fb {
+  background-position: 0px -25px; }
+
+.gh {
+  background-position: 0px -50px; }
+
+.social:hover {
+  border-color: #d92731; }
+
+.vk:hover {
+  background-position: 0px -128px; }
+
+.fb:hover {
+  background-position: 0px 1px; }
+
+.gh:hover {
+  background-position: 0px -76px; }
 
 @media only screen and (min-width: 1101px) {
   .container {
