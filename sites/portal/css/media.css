@@ -1,0 +1,175 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.container {
+		max-width: 1190px;
+	}
+ 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.container {
+		max-width: 980px;
+	}
+
+	.mail_input {
+		width: 350px;
+		padding-left: 20px;
+	}
+
+	/*.image-wrap img {
+		height: 80%;
+	}*/
+
+	.team li:first-child {
+		margin-left: 0;
+	}
+
+	.services .col-6,
+	.about .col-6 {
+		margin: 0 10%;
+		width: 80%;
+	}
+	
+	.projects .col-3,
+	.team .col-3 {
+		width: 50%;
+	}
+
+	/*.team-social {
+		padding-left: 20%;
+	}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.services .col-6,
+	.about .col-6 {
+		margin: 0 5%;
+		width: 90%;
+	}
+
+	.projects .col-3,
+	.team .col-3 {
+		width: 50%;
+	}
+
+	.mail_input {
+    max-width: 270px;
+}
+
+@media only screen and (max-width : 585px) {
+	
+	 .col-7, .col-5 {
+		width: 100%;
+	}
+	
+	.social {
+		float: left;
+	}
+
+	.navigation {
+		display: none;
+	}
+		
+	.projects-title,
+	.team-title,
+	.services-title {
+		margin: 10px 0 80px 0;
+	}
+
+	.services-title .title,
+	 .projects-title .title,
+	  .team-title .title {
+	  	font-size: 30px;
+	  }
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.projects .col-3,
+	.team .col-3  {
+		width: 100%;
+	}
+	
+	.container {
+		width: 320px;
+		padding: 0;
+	}
+
+	.col-3 {
+		width: 100%;
+	}
+	
+	.top_header,
+	.header {
+		display: none;
+	}
+
+	.section-item,
+	.services-item,
+	.projects-title,
+	.services-title,
+	.team-title{
+		padding-left: 0;
+		background: none;
+	}
+	
+	.lamp,
+	.tree,
+	.instruments,
+	.mob,
+	.soft,
+	.interior,
+	.brand,
+	.web{
+		background: none;
+	}
+
+	.mail_input {
+    max-width: 140px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+	.container {
+		width: 320px;
+		padding: 0;
+	}
+
+	.col-3 {
+		width: 100%;
+	}
+	
+	.top_header,
+	.header {
+		display: none;
+	}
+
+	.section-item,
+	.services-item,
+	.projects-title,
+	.services-title,
+	.team-title{
+		padding-left: 0;
+		background: none;
+	}
+	
+	.lamp,
+	.tree,
+	.instruments,
+	.mob,
+	.soft,
+	.interior,
+	.brand,
+	.web{
+		background: none;
+	}
+
+	.mail_input {
+    max-width: 140px;
+}

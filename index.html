@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-En">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8">
@@ -14,24 +19,25 @@
 	<!--ico-->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!--CSS-->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css">
 	<link rel="stylesheet" href="css/mynormalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!--JS-->
-	<!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script> -->
+	<script src="libs/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<!---HEADER-->
+	
 <div class="wrapper">
-	<div class="header">
+	<!---HEADER-->
+	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-md-2">
 					<div class="logo">
 						<h1 class="tagstyle">E</h1>
 					</div>
 				</div>
-				<div class="col-10">
+				<div class="col-md-10">
 					<ul class="navigation">
 						<li><a class="tagstyle" href="#home">home</a></li>
 						<li><a class="tagstyle" href="#info">info</a></li>
@@ -41,13 +47,13 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<!---HOME-->
-	<div class="home" id="home">
+	<section class="home" id="home">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 clearfix">
+				<div class="col-md-12 clearfix">
 					<div class="home-title">
 						<p>Hello, I'm <span>Evhenii Holodniak</span></p>
 						<h3 class="tagstyle">a front-end developer</h3>
@@ -55,18 +61,18 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--info-->
-	<div class="info" id="info">
+	<section class="info" id="info">
 		<div class="section-title">
 			<div class="container">
-				<h2 class="tagstyle" >info</h2>
+				<h2 class="tagstyle">info</h2>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-md-4">
 					<div class="skills">
 						<p class="select-style">.contacts</p>
 						<div class="items">
@@ -77,21 +83,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-md-4">
 					<div class="skills">
 						<p class="select-style">.skills</p>
 						<div class="items">
-							<p class="item-name">html/html5<span class="item-value mat">85%</span></p>
+							<p class="item-name">html/html5 + Bootstrap<span class="item-value mat">85%</span></p>
 							<p class="item-name">css/css3 + sass<span class="item-value mat">85%</span>
 							</p>
 							<p class="item-name">JavaScript + JQuery<span class="item-value mat">50%</span></p>
-							<p class="item-name">Bootstrap<span class="item-value mat">75%</span></p>
-							<p class="item-name">CMS<span class="item-value mat">WordPress</span></p>
-							<p class="item-name">knowledge<span class="item-value mat">git, gulp</span></p>
+							<p class="item-name">DevTools<span class="item-value mat">git, gulp, npm, bower</span></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-md-4">
 					<div class="skills">
 						<p class="select-style">.languages</p>
 						<div class="items">
@@ -103,53 +107,99 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--PORTFOLIO-->
-	<div class="portfolio" id="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="section-title">
-			<div class="container">
+			<div class="container-fluid">
 				<h2 class="tagstyle">portfolio</h2>
 			</div>
 		</div>
 		<div class="container">
-			<div class="row sites">
-				<div class="col-4">
+			<div class="row">
+				<!-- =====FIRST-SITE===== -->
+				<div class="col-sm-4">
 					<div class="site">
-						<a href="/sites/dropp/index.html">
-							<img src="img/dropp.jpg" alt="">
+						<a href="sites/tajem/index.html">
+							<img src="img/tajem.jpg" alt="tajem">
 							<div class="image-hover">
-								<h3 class="tagstyle">Dropp</h3>
+								<h3 class="tagstyle">Tajem</h3>
 							</div>
 						</a>
 					</div>
 				</div>
-				<div class="col-4">
+
+				<!-- =====SECOND-SITE===== -->
+
+				<div class="col-sm-4 ">
 					<div class="site">
-						<a href="http://ex-android.ru">
-							<img src="img/ex-android.jpg" alt="">
+						<a href="sites/tockit/index.html">
+							<img src="img/tockit.jpg" alt="tockit">
 							<div class="image-hover">
-								<h3 class="tagstyle">Ex-android.ru</h3>
+								<h3 class="tagstyle">Tockit</h3>
 							</div>
 						</a>
 					</div>
 				</div>
-				<div class="col-4">
+
+				<!-- =====THIRD-SITE===== -->
+				<div class="col-sm-4 ">
 					<div class="site">
-						<a href="http://holod-e.github.io/">
+						<a href="sites/portal/index.html">
+							<img src="img/portal.jpg" alt="">
+							<div class="image-hover">
+								<h3 class="tagstyle">Portal</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<!-- =====FOURTH-SITE===== -->
+				<div class="col-sm-4 ">
+					<div class="site">
+						<a href="sites/dropp/index.html">
+							<img src="img/dropp.jpg" alt="dropp">
+							<div class="image-hover">
+									<h3 class="tagstyle">Dropp</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- =====FIVE-SITE===== -->
+				<div class="col-sm-4 ">
+					<div class="site">
+						<a href="sites/golden/index.html">
+							<img src="img/golden.jpg" alt="">
+							<div class="image-hover">
+								<h3 class="tagstyle">Golden</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- =====SIX-SITE===== -->
+
+				<div class="col-sm-4">
+					<div class="site">
+						<a href="https:/holod-e.github.io">
 							<img src="img/portfolio.jpg" alt="">
 							<div class="image-hover">
-								<h3 class="tagstyle">my Portfolio site</h3>
+								<h3 class="tagstyle">my portfolio site</h3>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--CONTATCS-->
-	<div class="about" id="about">
+	<section class="about" id="about">
 		<div class="section-title">
 			<div class="container">
 				<h2 class="tagstyle">about</h2>
@@ -157,12 +207,12 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="myphoto">
 						<img src="img/port-foto.png" alt="">
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="about-me">
 						<h3>Who I am</h3>
 						<p>Hello World! I live in Kiev/Ukraine. I can build responsive and cross-browser websites. I mostly do front-end development (HTML5, CSS3, Javascript) but, also I can do some backend work (php, MySQL).It is very interesting to learn new web-technologies and use them in my work. If you want to work with me or just say "hey Evhenii, what's up?" for no reason what so ever, contact me.</p>
@@ -170,12 +220,36 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--FOOTER-->
 	<footer>
 		<p class="author-info"><span>&copy;</span> 2015 Evhenii Holodniak</p>
+		<div class="social-icons">
+			<a href="http://vk.com/holodniak_e" class="social vk"></a>
+			<a href="https://www.facebook.com/holodniak.e" class="social fb"></a>
+			<a href="https://github.com/Holod-e" class="social gh"></a>
+		</div>
 	</footer>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	
+	<script src="js/common.js"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </div>
 </body>
 </html>

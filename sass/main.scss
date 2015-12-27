@@ -2,6 +2,32 @@
 * { box-sizing: border-box;}
 h2 {margin: 0}
 
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;}
+
+html.js .loader	.loader_inner {
+		background-image: url("../img/preloader.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #fff;
+		height: 60px;
+		width: 60px;
+		margin-top: -30px;
+		margin-left: -30px;
+		left: 50%;
+		top: 50%;
+		position: absolute;
+	}
+	
 @font-face {
   font-family: 'Consolas';
     src: url('../fonts/Consolas.eot');
@@ -23,8 +49,6 @@ body {
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto; 
   margin-bottom: 50px;
 }
 
@@ -220,8 +244,6 @@ h2.tagstyle {
 
 /////////////////PORTFOLIO/////////////////////////
 
-.portfolio {width: 100%;}
-
 .site {
 	position: relative;
 	display: block;
@@ -290,9 +312,9 @@ vertical-align: bottom;
 
 
 //FOTER////////////
+
 footer {
 	display: block;
-	height: 50px;
 	text-align: center;
 	padding-top: 1px;
 	background-color: #171814;
@@ -302,38 +324,46 @@ footer {
 .author-info {
 	font: 15px 'Consolas';
 	color: #fff;
+	margin-bottom: 20px;
 }
+
 .athor-info span {
 	font-size: 20px;
 }
-// for dekstops
-@media only screen and (min-width: 1101px)  {
-	.container {
-		max-width: 1200px;
-	}
+
+.social-icons {
+	display: block; 
+	margin: 0 auto;
+	
 }
-//for nontebooks
-@media only screen and (min-width: 901px) and (max-width: 1100px) {
-	.container {
-		max-width: 1070px;
-	}
+
+.social {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	background-image: url(../img/social.png);
 }
-// for tablets
-@media only screen and (min-width: 783px) and (max-width: 900px) {
-	.container {
-		max-width: 800px;
-	}
-}
-//for smartfones
-@media only screen and (max-width: 782px) {
-	.container {
-		width: 100%;
-		padding: 0;
-	}
+
+.vk {background-position: 0px -102px;}
+.fb {background-position: 0px -25px;}
+.gh {background-position: 0px -50px;}
+
+.social:hover {border-color: #d92731;}
+.vk:hover {background-position: 0px -128px;}
+.fb:hover {background-position: 0px 1px;}
+.gh:hover {background-position: 0px -76px;}
+
+
+
+
+// //for smartfones
+@media only screen and (max-width: 768px) {
+	
 
 	.navigation {display: none;}
-	.row {margin: 0;}
-	.col-4, .col-3, .col-6 {
-		width: 100%;
-	}
 }
