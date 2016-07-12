@@ -1,0 +1,334 @@
+/*********************************************		@IMPORT VARIABLES
+\*********************************************/
+/*********************************************		COLORS
+\*********************************************/
+/*********************************************		FONTS
+\*********************************************/
+/*********************************************		@IMPORT BUTTONS
+\*********************************************/
+.close {
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: none;
+  font: bold 131% sans-serif;
+  padding: 0 6px 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 0.3s linear; }
+
+.close:hover {
+  color: #fff;
+  background-color: #000; }
+
+.button {
+  background-color: #2b91af;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; }
+
+#soc {
+  margin-top: 0;
+  margin-left: 0;
+  margin: 0 auto;
+  width: 320px;
+  height: 40px;
+  border-radius: 3px;
+  /*border: 1px #dadada solid;*/
+  background-color: transparent;
+  /*background-color: #eeeeee;*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*float: left;*/ }
+
+#soc1 {
+  width: 205px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 42px;
+  padding-left: 0;
+  margin-left: -25px; }
+
+#soc2 {
+  width: 130px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 28px; }
+
+/*********************************************		MAIN STYLE
+\*********************************************/
+body {
+  font-family: "HelveticaNeueCyr-Roman", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  min-width: 320px;
+  color: #333333;
+  position: relative;
+  background-color: #000;
+  background: #000 url(../img/mainbg1.jpg) 32% 0 repeat-y; }
+
+.hidden {
+  display: none; }
+
+.carousel img {
+  width: 100%;
+  height: auto; }
+
+.wrapper {
+  margin: 0 auto; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+br.sm {
+  display: none; }
+
+br.xs {
+  display: none; }
+
+form input.error {
+  box-shadow: inset 0px 0px 20px 1px rgba(255, 0, 0, 0.3);
+  border: 2px solid red !important; }
+
+form input.not_error {
+  box-shadow: inset 0px 0px 20px 1px rgba(100, 255, 100, 0.3);
+  border: 2px solid #99FF99 !important; }
+
+/*********************************************		@IMPORT HEADER
+\*********************************************/
+header {
+  position: fixed;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #000;
+  height: 60px;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  header p {
+    color: #fff;
+    font-size: 20px; }
+  header span {
+    display: inline-block;
+    width: 30px;
+    height: 25px; }
+
+/*********************************************		TYPOGRAPHY
+\*********************************************/
+/*********************************************		SECTIONS
+\*********************************************/
+.playerName {
+  text-align: center;
+  color: #fff;
+  font-size: 30px; }
+
+.sec1 {
+  margin-top: 70px;
+  height: 2500px; }
+
+.fighters {
+  text-align: center; }
+  .fighters button {
+    cursor: pointer;
+    display: inline-block; }
+  .fighters #fighters1 li {
+    color: #fff;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 100px;
+    cursor: pointer; }
+    .fighters #fighters1 li img {
+      margin-left: 20px; }
+    .fighters #fighters1 li button {
+      margin-left: 20px; }
+  .fighters #fighters2 li {
+    color: #fff;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 100px;
+    cursor: pointer; }
+    .fighters #fighters2 li img {
+      margin-right: 20px; }
+    .fighters #fighters2 li button {
+      margin-right: 20px; }
+
+.winner {
+  background-color: green;
+  color: white; }
+
+#fighters1 li:first-child,
+#fighters2 li:first-child {
+  display: block; }
+
+#fighters1 li,
+#fighters2 li {
+  display: none; }
+
+.loose {
+  background: url(../img/blood.png) 50% 0 no-repeat;
+  background-size: 80%;
+  opacity: 0.5; }
+
+/*********************************************		@IMPORT FOOTER
+\*********************************************/
+footer {
+  width: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  text-align: center; }
+  footer br.sm {
+    display: none; }
+  footer br.xs {
+    display: none; }
+  footer p {
+    font-family: 'HelveticaNeueCyr-Roman';
+    color: #979898;
+    font-size: 16px; }
+  footer .social {
+    margin-bottom: 35px; }
+  footer a {
+    font-family: 'HelveticaNeueCyr-Roman';
+    padding: 0 10px;
+    color: #979898;
+    font-size: 16px;
+    transition: all 0.3s linear; }
+  footer a:hover {
+    text-decoration: none; }
+  footer a.partners {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: #f45c33;
+    border: 1px solid #f45c33; }
+  footer a.partners:hover {
+    color: #fff;
+    background-color: #f45c33; }
+  footer .contacts {
+    margin-top: 0; }
+  footer .copy {
+    margin-top: 60px;
+    margin-bottom: 0; }
+  footer a.icon-soc {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    vertical-align: top;
+    margin: 0px 5px;
+    background-image: url(../img/soc-footer.png); }
+  footer a.icon-soc:hover {
+    opacity: 0.8; }
+  footer .icon-fb {
+    background-position: 0px 0px; }
+  footer .icon-inst {
+    background-position: 0px -19px; }
+  footer .icon-vk {
+    background-position: 0px -38px; }
+  footer .icon-yt {
+    background-position: 0px -57px; }
+
+@media only screen and (max-width: 960px) {
+  footer br.sm {
+    display: block; }
+  footer br.xs {
+    display: none; }
+  footer p {
+    font-size: 15px; }
+  footer .footer-inline {
+    text-align: center; }
+  footer .footer-inline a {
+    font-size: 15px;
+    display: inline-block;
+    text-align: left; } }
+
+@media only screen and (max-width: 720px) {
+  footer p {
+    font-size: 14px; }
+  footer br.sm {
+    display: none; }
+  footer br.xs {
+    display: block; }
+  footer .footer-inline a {
+    font-size: 14px;
+    display: block;
+    text-align: center; } }
+
+/*********************************************		@IMPORT MEDIA
+\*********************************************/
+/*********************************************		Desktop First Method
+\*********************************************/
+/* Medium Devices, Notebooks */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 720px; }
+  br.sm {
+    display: block; }
+  br.xs {
+    display: none; }
+  .fighters #fighters1 li {
+    margin-right: 30px; }
+    .fighters #fighters1 li img {
+      margin-left: 20px; }
+    .fighters #fighters1 li button {
+      margin-left: 20px; }
+  .fighters #fighters2 li {
+    margin-left: 30px; }
+    .fighters #fighters2 li img {
+      margin-right: 20px; }
+    .fighters #fighters2 li button {
+      margin-right: 20px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 340px;
+    overflow: hidden; }
+  br.sm {
+    display: none; }
+  br.xs {
+    display: block; }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 340px) {
+  .container {
+    padding: 0;
+    overflow: hidden;
+    width: 320px; } }
+
+/*********************************************		Mobile First Method
+\*********************************************/
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

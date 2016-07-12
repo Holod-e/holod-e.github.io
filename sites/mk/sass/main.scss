@@ -1,0 +1,130 @@
+/*********************************************\
+		@IMPORT VARIABLES
+\*********************************************/
+@import "_variables.scss";
+
+/*********************************************\
+		@IMPORT BUTTONS
+\*********************************************/
+@import "_buttons.scss";
+
+/*********************************************\
+		MAIN STYLE
+\*********************************************/
+body {
+	font-family: "HelveticaNeueCyr-Roman", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	min-width: 320px;
+	color: #333333;
+	position: relative;
+	background-color: #000;
+	background: #000 url(../img/mainbg1.jpg) 32% 0 repeat-y;
+}
+
+////Удалить или закоментировать при адаптивном дизайне!//////////////
+// .container {width: 960px !important;}
+//////////////////////////////////////////////////////////////////////
+
+.hidden {
+	display: none;
+}
+
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+br.sm {display: none;}
+br.xs {display: none;}
+
+//validatorGM styles//
+ form input.error {
+ 	box-shadow: inset 0px 0px 20px 1px rgba(255,0,0,0.3);
+ 	border: 2px solid red !important;}
+ form input.not_error {
+ 	box-shadow: inset 0px 0px 20px 1px rgba(100,255,100,0.3);
+ 	border: 2px solid #99FF99 !important;}
+
+
+
+/*********************************************\
+		@IMPORT HEADER
+\*********************************************/
+@import "_header.scss";
+
+/*********************************************\
+		TYPOGRAPHY
+\*********************************************/
+
+/*********************************************\
+		SECTIONS
+\*********************************************/
+.playerName {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.sec1 
+{margin-top: 70px;
+
+height: 2500px;}
+.fighters {
+	text-align: center;
+	button {
+		cursor: pointer;
+		display: inline-block;}
+	#fighters1 li {
+		color: #fff;
+		font-size: 20px;
+		list-style-type: none;
+		text-align: right;
+		margin-right: 100px;
+		cursor: pointer;
+		img {margin-left: 20px;}
+		button {margin-left: 20px;}
+	}
+	#fighters2 li {
+		color: #fff;
+		font-size: 20px;
+		list-style-type: none;
+		text-align: left;
+		margin-left: 100px;
+		cursor: pointer;
+		img {margin-right: 20px;}
+		button {margin-right: 20px;}
+	}
+
+}
+.winner {
+	background-color: green;
+	color: white;
+}
+#fighters1 li:first-child,
+#fighters2 li:first-child{display: block;}
+#fighters1 li,
+#fighters2 li {display: none;}
+
+.loose {
+	background: url(../img/blood.png) 50% 0 no-repeat;
+	background-size: 80%;
+	opacity: 0.5;
+}
+/*********************************************\
+		@IMPORT FOOTER
+\*********************************************/
+@import "_footer.scss";
+
+/*********************************************\
+		@IMPORT MEDIA
+\*********************************************/
+@import "_media.scss";

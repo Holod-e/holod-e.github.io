@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+
+	<title>Mortal Kombat</title>
+	<!-- SEO -->
+	<meta property="og:title" content="title">
+	<meta property="og:description" content="Описание">
+	<meta property="og:image" content="http://geniusmarketing.me/pic.png">
+	<meta property="og:url" content="http://geniusmarketing.me/"/>
+	<meta property="fb:admins" content="1510615147"/>
+	<meta property="fb:app_id" content="473200492729081"/>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!--раскоментить viewport при адаптивном дизайне-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--сюда подключаем все сторонние библиотечные стили-->
+	<!-- build:css css/libs.min.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrapGM.css">
+	<link rel="stylesheet" href="css/tingle.css">
+	<!-- endbuild -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--Сюда подключаются главные стили-->
+	<!-- build:css css/main.min.css -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<!-- Code -->
+	<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+					<p class="playerName">Jonatan <span id="score1">0</span></p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+					<p class="playerName">Morving <span id="score2">0</span></p>
+			</div>
+		</div>
+	</div>
+	</header>
+<!---------- SECTION 1 ---------->
+<section class="sec1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="fighters">
+					<button id="genBtn1">Generate</button>
+					<ul id="fighters1">
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="fighters">
+					<button id="genBtn2">Generate</button>
+					<ul id="fighters2">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- build:js js/libs.min.js -->
+	<script src="js/mk.js"></script>
+	<!-- <script src="js/tingle.js"></script> -->
+	<!-- <script src="js/AnchorScroller.js"></script> -->
+	<script src="js/cookie.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<!-- <script src="js/validatorGM.js"></script> -->
+	<!-- endbuild -->
+	<!-- build:js js/common.min.js -->
+	<!-- <script src="js/common.js"></script> -->
+		<!-- endbuild -->
+	
+</body>
+</html>
