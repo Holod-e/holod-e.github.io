@@ -189,8 +189,8 @@ $('#fighters2').on('click', 'button', function(){
     $(this).addClass('winner');
      var nb = $(this).closest('li').index('li');
      console.log(nb);
-     var nb2 = nb + 2 - 28;
-     var loser = nb +1 - 29;
+     var nb2 = nb + 1 - 28 ;
+     var loser = nb + 1 - 29 ;
     var nb3 =  "li:nth-child(" + nb2 + ")";
     $('#fighters1').find("li:nth-child(" + loser + ") ").addClass('loose');
     $(nb3).fadeIn(1000);
