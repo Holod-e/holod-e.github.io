@@ -138,40 +138,51 @@ var p1 = {
     };
 // Использование
 var fighters = [p1, p2, p3, p4, p5, p6, p7 ,p8, p9, p10, p11, p12 ,p13 ,p14, p15, p16, p17, p18, p19,p20 ,p21 ,p22 ,p23 , p24, p25, p26, p27, p28, p29];
+var count1 = 0;
+var count2 = 0;
 
-$('#genBtn1').on('click', function(){
+var generate1 = function(){
     $('#fighters1').children().remove();
     var player1 = shuffle(fighters);
     for(var j = player1.length; --j > -1;){
         var el = "<li>" + player1[j].name + "<img src='" + player1[j].img + "'><button>win</button> </li>";
         $('#fighters1').append(el);
     };
-});
+};
 
-$('#genBtn2').on('click', function(){
+var generate2 = function(){
     $('#fighters2').children().remove();
     var player2 = shuffle(fighters);
     for(var j = player2.length; --j > -1;){
         var el = "<li><button>win</button><img src='" + player2[j].img + "'>" + player2[j].name + "</li>";
         $('#fighters2').append(el);
     };
-});
+};
 
-var count1 = 0;
-var count2 = 0;
+$('#gen').on('click', function(){
+    generate1();
+    generate2();
+    count1 = 0;
+    count2 = 0;
+    $('#score1').html(count1);
+    $('#score2').html(count2);
+    return count1, count2;
+})
+
 
 $('#fighters1').on('click', 'button', function(){
-  if ($(this).hasClass('winner')) {
-    count1 = count1 - 1;
-    $(this).removeClass('winner');
-  }
-  else {
-      count1 = count1 +1;
-      $(this).addClass('winner');
       var nb = $(this).closest('li').index('li');
       var nb2 = nb + 2;
       var loser = nb +1;
       var nb3 =  "li:nth-child(" + nb2 + ")";
+  if ($(this).hasClass('winner')) {
+    count1 = count1 - 1;
+    $(this).removeClass('winner');
+    $('#fighters2').find("li:nth-child(" + loser + ")").removeClass('loose');
+  }
+  else {
+      count1 = count1 +1;
+      $(this).addClass('winner');
       $('#fighters2').find("li:nth-child(" + loser + ")").addClass('loose');
       $(nb3).fadeIn(1000);
   }
@@ -180,6 +191,11 @@ $('#fighters1').on('click', 'button', function(){
 });
 
 $('#fighters2').on('click', 'button', function(){
+     var nb = $(this).closest('li').index('li');
+     var nb2 = nb + 1 - 28 ;
+     var loser = nb + 1 - 29 ;
+     var nb3 =  "li:nth-child(" + nb2 + ")";
+     $('#fighters1').find("li:nth-child(" + loser + ") ").removeClass('loose');
   if ($(this).hasClass('winner')) {
     count2 = count2 - 1;
     $(this).removeClass('winner');
@@ -187,11 +203,7 @@ $('#fighters2').on('click', 'button', function(){
   else {
     count2 = count2 +1;
     $(this).addClass('winner');
-     var nb = $(this).closest('li').index('li');
-     console.log(nb);
-     var nb2 = nb + 1 - 28 ;
-     var loser = nb + 1 - 29 ;
-    var nb3 =  "li:nth-child(" + nb2 + ")";
+    
     $('#fighters1').find("li:nth-child(" + loser + ") ").addClass('loose');
     $(nb3).fadeIn(1000);
   }
