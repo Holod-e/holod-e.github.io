@@ -177,7 +177,7 @@ header {
 #fighters1 li:first-child,
 #fighters2 li:first-child {
   display: block; }
-
+#fighters2 {padding: 0;}
 #fighters1 li,
 #fighters2 li {
   display: none; }
