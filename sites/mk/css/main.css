@@ -68,6 +68,13 @@
   -webkit-box-sizing: border-box;
   line-height: 28px; }
 
+.styleNumber {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+}
 /*********************************************		MAIN STYLE
 \*********************************************/
 body {
