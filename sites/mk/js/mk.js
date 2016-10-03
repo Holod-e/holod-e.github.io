@@ -175,7 +175,7 @@ var generate2 = function(){
         if (randomNumber > 0.6666) {
             styleNumber = 3;
         }
-        var el = "<li><button>win</button><span class='styleNumber'>" + styelNuber +"</span><img src='" + player2[j].img + "'>" + player2[j].name + "</li>";
+        var el = "<li><button>win</button><span class='styleNumber'>" + styelNumber +"</span><img src='" + player2[j].img + "'>" + player2[j].name + "</li>";
         $('#fighters2').append(el);
     };
 };
