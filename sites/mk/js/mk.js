@@ -165,7 +165,17 @@ var generate2 = function(){
     $('#fighters2').children().remove();
     var player2 = shuffle(fighters);
     for(var j = player2.length; --j > -1;){
-        var el = "<li><button>win</button><img src='" + player2[j].img + "'>" + player2[j].name + "</li>";
+        var styleNumber;
+        if (randomNumber <= 0.3333) {
+            styleNumber = 1;
+        }
+        if (randomNumber > 0.333 && randomNumber <= 0.6666) {
+            styleNumber = 2;
+        }
+        if (randomNumber > 0.6666) {
+            styleNumber = 3;
+        }
+        var el = "<li><button>win</button><span class='styleNumber'>" + styelNuber +"</span><img src='" + player2[j].img + "'>" + player2[j].name + "</li>";
         $('#fighters2').append(el);
     };
 };
