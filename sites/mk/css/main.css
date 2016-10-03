@@ -81,6 +81,7 @@
 #fighters2 .styleNumber {
   margin-left: 0;
   margin-right: -30px;
+  position: absolute;
 }
 /*********************************************		MAIN STYLE
 \*********************************************/
