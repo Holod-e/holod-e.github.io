@@ -165,6 +165,7 @@ var generate2 = function(){
     $('#fighters2').children().remove();
     var player2 = shuffle(fighters);
     for(var j = player2.length; --j > -1;){
+        var randomNumber = Math.random();
         var styleNumber;
         if (randomNumber <= 0.3333) {
             styleNumber = 1;
