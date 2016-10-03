@@ -22,119 +22,119 @@ var shuffle2 = function(a) {
 }
 var p1 = {
     name: "Ermac",
-    img: 'img/ermac.png' 
+    img: 'img/ermac.png'
     },
     p2 = {
     name: "Jax",
-    img: 'img/jax.png' 
+    img: 'img/jax.png'
     },
     p3 = {
     name: "Johnny Cage",
-    img: 'img/Johnny-Cage.png' 
+    img: 'img/Johnny-Cage.png'
     },
     p4 = {
     name: "Kano",
-    img: 'img/Kano.png' 
+    img: 'img/Kano.png'
     },
     p5 = {
     name: "Kenshi",
-    img: 'img/Kenshi.png' 
+    img: 'img/Kenshi.png'
     },
     p6 = {
     name: "Kitana",
-    img: 'img/Kitana.png' 
+    img: 'img/Kitana.png'
     },
     p7 = {
     name: "Kung Lao",
-    img: 'img/Kung-Lao.png' 
+    img: 'img/Kung-Lao.png'
     },
     p8 = {
     name: "Liu Kang",
-    img: 'img/Liu-Kang.png' 
+    img: 'img/Liu-Kang.png'
     },
     p9 = {
     name: "Mileena",
-    img: 'img/Mileena.png' 
+    img: 'img/Mileena.png'
     },
     p10 = {
     name: "Quan Chi",
-    img: 'img/Quan-Chi.png' 
+    img: 'img/Quan-Chi.png'
     },
     p11 = {
     name: "Raiden",
-    img: 'img/Raiden.png' 
+    img: 'img/Raiden.png'
     },
     p12 = {
     name: "Reptile",
-    img: 'img/Reptile.png' 
+    img: 'img/Reptile.png'
     },
     p13 = {
     name: "Scorpion",
-    img: 'img/Scorpion.png' 
+    img: 'img/Scorpion.png'
     },
     p14 = {
     name: "Shinnok",
-    img: 'img/Shinnok.png' 
+    img: 'img/Shinnok.png'
     },
     p15 = {
     name: "Sub-Zero",
-    img: 'img/Sub-Zero.png' 
+    img: 'img/Sub-Zero.png'
     },
     p16 = {
     name: "Cassie Cage",
-    img: 'img/Cassie-Cage.png' 
+    img: 'img/Cassie-Cage.png'
     },
     p17 = {
     name: "DiVorah",
-    img: 'img/DiVorah.png' 
+    img: 'img/DiVorah.png'
     },
     p18 = {
     name: "Erron Black",
-    img: 'img/Erron-Black.png' 
+    img: 'img/Erron-Black.png'
     },
     p19 = {
     name: "Ferra & Torr",
-    img: 'img/Ferrator.png' 
+    img: 'img/Ferrator.png'
     },
     p20 = {
     name: "Jacqui Briggs",
-    img: 'img/Jacqui-Briggs.png' 
+    img: 'img/Jacqui-Briggs.png'
     },
     p21 = {
     name: "Kotal Kahn",
-    img: 'img/Kotal-Kahn.png' 
+    img: 'img/Kotal-Kahn.png'
     },
     p22 = {
     name: "Kung Jin",
-    img: 'img/Kung-Jin.png' 
+    img: 'img/Kung-Jin.png'
     },
     p23 = {
     name: "Takeda Takahashi",
-    img: 'img/Takeda-Takahashi.png' 
+    img: 'img/Takeda-Takahashi.png'
     },
     p24 = {
     name: "Sonya Blade",
-    img: 'img/Sonya-Blade.png' 
+    img: 'img/Sonya-Blade.png'
     },
     p25 = {
     name: "Tanya",
-    img: 'img/Tanya.png' 
+    img: 'img/Tanya.png'
     },
     p26 = {
     name: "Tremor",
-    img: 'img/Tremor.png' 
+    img: 'img/Tremor.png'
     },
     p27 = {
     name: "Goro",
-    img: 'img/Goro.png' 
+    img: 'img/Goro.png'
     },
     p28 = {
     name: "Predator",
-    img: 'img/Predator.png' 
+    img: 'img/Predator.png'
     },
     p29 = {
     name: "Jason",
-    img: 'img/maska.png' 
+    img: 'img/maska.png'
     };
 // Использование
 var fighters = [p1, p2, p3, p4, p5, p6, p7 ,p8, p9, p10, p11, p12 ,p13 ,p14, p15, p16, p17, p18, p19,p20 ,p21 ,p22 ,p23 , p24, p25, p26, p27, p28, p29];
@@ -145,7 +145,18 @@ var generate1 = function(){
     $('#fighters1').children().remove();
     var player1 = shuffle(fighters);
     for(var j = player1.length; --j > -1;){
-        var el = "<li>" + player1[j].name + "<img src='" + player1[j].img + "'><button>win</button> </li>";
+        var randomNumber = Math.random();
+        var styleNumber;
+        if (randomNumber <= 0.3333) {
+            styleNumber = 1;
+        }
+        if (randomNumber > 0.333 && randomNumber <= 0.6666) {
+            styleNumber = 2;
+        }
+        if (randomNumber > 0.6666) {
+            styleNumber = 3;
+        }
+        var el = "<li>" + player1[j].name + "<img src='" + player1[j].img + "'><span class='styleNumber'>" + styleNumber +"</span><button>win</button> </li>";
         $('#fighters1').append(el);
     };
 };
@@ -203,7 +214,7 @@ $('#fighters2').on('click', 'button', function(){
   else {
     count2 = count2 +1;
     $(this).addClass('winner');
-    
+
     $('#fighters1').find("li:nth-child(" + loser + ") ").addClass('loose');
     $(nb3).fadeIn(1000);
   }
