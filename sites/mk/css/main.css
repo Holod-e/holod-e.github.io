@@ -71,9 +71,16 @@
 .styleNumber {
   border-radius: 50%;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  text-align: center;
+  vertical-align: top;
+  margin-left: -30px;
+}
+#fighters2 .styleNumber {
+  margin-left: 0;
+  margin-right: -30px;
 }
 /*********************************************		MAIN STYLE
 \*********************************************/
