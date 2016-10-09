@@ -135,9 +135,25 @@ var p1 = {
     p29 = {
     name: "Jason",
     img: 'img/maska.png'
+    },
+     p30 = {
+    name: "Triborg",
+    img: 'img/Triborg.png'
+    },
+     p31 = {
+    name: "Alien",
+    img: 'img/Alien.png'
+    },
+     p32 = {
+    name: "Bo'Rai Cho",
+    img: 'img/Boracho.png'
+    },
+     p33 = {
+    name: "Leatherface",
+    img: 'img/Leatherface.png'
     };
 // Использование
-var fighters = [p1, p2, p3, p4, p5, p6, p7 ,p8, p9, p10, p11, p12 ,p13 ,p14, p15, p16, p17, p18, p19,p20 ,p21 ,p22 ,p23 , p24, p25, p26, p27, p28, p29];
+var fighters = [p1, p2, p3, p4, p5, p6, p7 ,p8, p9, p10, p11, p12 ,p13 ,p14, p15, p16, p17, p18, p19,p20 ,p21 ,p22 ,p23 , p24, p25, p26, p27, p28, p29, p30, p31, p32, p33];
 var count1 = 0;
 var count2 = 0;
 
@@ -214,8 +230,8 @@ $('#fighters1').on('click', 'button', function(){
 
 $('#fighters2').on('click', 'button', function(){
      var nb = $(this).closest('li').index('li');
-     var nb2 = nb + 1 - 28 ;
-     var loser = nb + 1 - 29 ;
+     var nb2 = nb + 1 - 32 ;
+     var loser = nb + 1 - 33 ;
      var nb3 =  "li:nth-child(" + nb2 + ")";
      $('#fighters1').find("li:nth-child(" + loser + ") ").removeClass('loose');
   if ($(this).hasClass('winner')) {
