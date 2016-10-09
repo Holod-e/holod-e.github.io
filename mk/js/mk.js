@@ -142,7 +142,7 @@ var p1 = {
     },
      p31 = {
     name: "Alien",
-    img: 'img/Alien.png'
+    img: 'img/alien.png'
     },
      p32 = {
     name: "Bo'Rai Cho",
